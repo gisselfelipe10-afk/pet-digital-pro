@@ -1,0 +1,156 @@
+/* --- RESET Y FONDO GLOBAL --- */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+body { background-color: #f0f7ff; }
+
+/* --- LOGIN: FONDO AZUL Y TARJETA CENTRADA (image_7ef0c3.png) --- */
+.login-container {
+  display: flex; justify-content: center; align-items: center;
+  height: 100vh; width: 100vw; background-color: #1e3a8a;
+}
+.login-card {
+  background: white; padding: 40px; border-radius: 20px;
+  width: 350px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.login-card input {
+  width: 100%; padding: 12px; margin: 10px 0;
+  background: #eef4ff; border: none; border-radius: 8px;
+}
+.btn-entrar {
+  width: 100%; padding: 12px; background: #3b82f6;
+  color: white; border: none; border-radius: 8px;
+  font-weight: bold; cursor: pointer; margin-top: 10px;
+}
+
+/* --- NAVEGACIÓN SUPERIOR (image_7fbf7b.jpg) --- */
+.top-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 50px; background: white; width: 100%;
+}
+.nav-tabs { display: flex; gap: 10px; }
+.tab-btn {
+  padding: 8px 25px; border-radius: 20px; border: none;
+  cursor: pointer; font-weight: bold; background: #eef4ff; color: #1e3a8a;
+}
+.tab-btn.active { background: #3b82f6; color: white; }
+
+/* --- PERFIL: CABECERA AZUL Y FOTO (image_7ef44a.png) --- */
+.content-area { display: flex; justify-content: center; padding: 40px 20px; }
+.profile-card {
+  width: 450px; background: white; border-radius: 30px;
+  overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.profile-header-blue {
+  background: linear-gradient(180deg, #1e3a8a, #3b82f6);
+  height: 160px; display: flex; justify-content: center;
+  align-items: center; position: relative;
+}
+.avatar-circle {
+  width: 120px; height: 120px; border-radius: 60px;
+  border: 4px solid white; overflow: hidden; background: white;
+}
+.avatar-circle img { width: 100%; height: 100%; object-fit: cover; }
+.info-section { padding: 30px; }
+.info-row {
+  display: flex; justify-content: space-between;
+  padding: 12px 0; border-bottom: 1px solid #f0f0f0;
+}
+.info-row label { color: #888; }
+.info-row span { font-weight: bold; color: #1e3a8a; }
+.edit-input {
+  border: 1px solid #3b82f6;
+  border-radius: 5px;
+  padding: 4px 8px;
+  color: #1e3a8a;
+  font-weight: bold;
+  text-align: right;
+  width: 60%;
+}
+
+.btn-editar-perfil {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn-editar-perfil:hover {
+  background: white;
+  color: #1e3a8a;
+}
+/* --- ESTILOS DE ALIMENTACIÓN --- */
+.alimentacion-container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.alerta-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background: #fff5f5;
+  border-left: 5px solid #ef4444;
+}
+
+.alerta-box h4 { color: #b91c1c; margin: 0; }
+
+.alimento-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #f0f4f8;
+}
+
+.nivel-peligro {
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.peligro-alto { background: #fee2e2; color: #ef4444; }
+.peligro-medio { background: #fef3c7; color: #d97706; }
+.tab-btn-exit {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #666;
+}
+
+.tab-btn-exit:hover {
+  background: #fee2e2;
+  color: #ef4444;
+  border-color: #ef4444;
+}
+.nav-tabs { display: flex; gap: 10px; background: #f1f5f9; padding: 5px; border-radius: 30px; }
+
+.tab-btn {
+  padding: 8px 20px;
+  border-radius: 25px;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background: #3b82f6;
+  color: white;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
