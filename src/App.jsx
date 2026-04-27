@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Login from './Login';
 import PerfilMascota from './PerfilMascota';
-import Alimentacion from './Alimentacion'; // Verifica que el archivo se llame exactamente Alimentacion.jsx
+import Alimentacion from './Alimentacion'; 
 import Cartilla from './Cartilla';
 import Localizador from './Localizador'; 
 import './App.css';
